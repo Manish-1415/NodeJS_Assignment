@@ -1,4 +1,4 @@
-import ApiError from "../utility/ApiError";
+import ApiError from "../utility/ApiError.js";
 import jwt from "jsonwebtoken";
 
 const verifySeller = (req, res, next) => {

@@ -11,7 +11,7 @@ router.post("/login", sellerLogin);
 
 router.post("/add_product", verifySeller, validateRequest(addProductSchema) ,addProduct);
 
-router.get("/products", getProducts);
+router.get("/products", verifySeller,getProducts);
 
 router.get("/get_product/:id", verifySeller ,generateProductPDF);
 
